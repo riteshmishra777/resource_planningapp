@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Share Your Resources</h1>
+    
+    <!-- Form to add resource -->
+    <div class="form-container">
+        <input type="text" id="resourceName" placeholder="Resource Name (e.g., Maths Notes)">
+        <select id="resourceCategory">
+            <option value="">Select Category</option>
+            <option value="Maths">Maths</option>
+            <option value="Science">Science</option>
+            <option value="Coding">Coding</option>
+        </select>
+        <input type="text" id="resourceLink" placeholder="Paste Link (e.g., Google Drive)">
+        <button onclick="addResource()">Add Resource</button>
+    </div>
+
+    <!-- List to show resources -->
+    <h2>Available Resources</h2>
+    <ul id="resourceList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
